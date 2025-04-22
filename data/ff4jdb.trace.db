@@ -1,0 +1,12 @@
+2025-04-22 22:02:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID FROM FF4J_PROPERTIES [42102-214]
+2025-04-22 22:02:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID,CLAZZ,CURRENTVALUE,DESCRIPTION,FIXEDVALUES FROM FF4J_PROPERTIES [42102-214]
+2025-04-22 22:02:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID,CLAZZ,CURRENTVALUE,DESCRIPTION,FIXEDVALUES FROM FF4J_PROPERTIES [42102-214]
+2025-04-22 22:02:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID FROM FF4J_PROPERTIES [42102-214]
