@@ -14,10 +14,7 @@ public class FF4JCalcInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        createFeature("feature-add", true);
-        createFeature("feature-sub", true);
-        createFeature("feature-mul", false);
-        createFeature("feature-div", false);
+
     }
 
     private void createFeature(String name, boolean enabled) {

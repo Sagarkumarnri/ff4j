@@ -10,3 +10,30 @@ SELECT PROPERTY_ID,CLAZZ,CURRENTVALUE,DESCRIPTION,FIXEDVALUES FROM FF4J_PROPERTI
 2025-04-22 22:02:24 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
 SELECT PROPERTY_ID FROM FF4J_PROPERTIES [42102-214]
+2025-04-22 23:58:07 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM FF4J_FEATURES FF4J_CUSTOM_PROPERTIES [*]FF4J_FEATURES FF4J_ROLES"; SQL statement:
+SELECT * FROM FF4J_FEATURES FF4J_CUSTOM_PROPERTIES FF4J_FEATURES FF4J_ROLES [42000-214]
+2025-04-26 17:33:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID FROM FF4J_PROPERTIES [42102-214]
+2025-04-26 17:41:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "Create [*]ACTIVE_USERS table\000d\000aCREATE TABLE ACTIVE_USERS (\000d\000a    USER_ID INT PRIMARY KEY AUTO_INCREMENT, -- Unique user ID\000d\000a    USERNAME VARCHAR(100) NOT NULL,          -- Username\000d\000a    FEAT_UID VARCHAR(100),                   -- Feature ID they are linked to\000d\000a    FOREIGN KEY (FEAT_UID) REFERENCES FF4J_FEATURES(FEAT_UID) -- FK to features table\000d\000a)"; expected "OR REPLACE, FORCE, VIEW, ALIAS, SEQUENCE, USER, TRIGGER, ROLE, SCHEMA, CONSTANT, DOMAIN, TYPE, DATATYPE, AGGREGATE, LINKED, MEMORY, CACHED, LOCAL TEMPORARY, GLOBAL TEMPORARY, TEMP, TEMPORARY, TABLE, SYNONYM, UNIQUE, HASH, SPATIAL, INDEX"; SQL statement:
+Create ACTIVE_USERS table
+CREATE TABLE ACTIVE_USERS (
+    USER_ID INT PRIMARY KEY AUTO_INCREMENT, -- Unique user ID
+    USERNAME VARCHAR(100) NOT NULL,          -- Username
+    FEAT_UID VARCHAR(100),                   -- Feature ID they are linked to
+    FOREIGN KEY (FEAT_UID) REFERENCES FF4J_FEATURES(FEAT_UID) -- FK to features table
+) [42001-214]
+2025-04-26 17:54:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO USER_FEATURE_MAPPING (USER_ID, [*]'feature-mul')"; expected "identifier"; SQL statement:
+INSERT INTO USER_FEATURE_MAPPING (USER_ID, 'feature-mul') [42001-214]
+2025-04-26 17:54:03 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO USER_FEATURE_MAPPING (USER_ID, [*]'feature-div')"; expected "identifier"; SQL statement:
+INSERT INTO USER_FEATURE_MAPPING (USER_ID, 'feature-div') [42001-214]
+2025-04-26 18:00:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID FROM FF4J_PROPERTIES [42102-214]
+2025-04-26 18:02:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FF4J_PROPERTIES" not found; SQL statement:
+SELECT PROPERTY_ID FROM FF4J_PROPERTIES [42102-214]
